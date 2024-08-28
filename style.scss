@@ -103,3 +103,20 @@ span.highlight {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
 //@import "svg-icons";
+
+.image-cropper {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  border: 2px solid white;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  overflow:hidden;
+}
+.my-picture {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
