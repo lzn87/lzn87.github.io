@@ -99,6 +99,38 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+/* News styling */
+.news-date {
+  color: #6f7a87;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.news-text p {
+  display: inline;
+}
+
+/* Publication thumbnails */
+.pub-thumb {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.04);
+}
+
+.pin-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0b5c0b;
+  background: #e6f4ea;
+  border: 1px solid #c4e6cd;
+  border-radius: 6px;
+  vertical-align: text-top;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
@@ -109,9 +141,9 @@ span.highlight {
   height: 80%;
   position: relative;
   border: 2px solid white;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
   overflow:hidden;
 }
 .my-picture {
