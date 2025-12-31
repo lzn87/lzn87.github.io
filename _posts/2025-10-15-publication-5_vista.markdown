@@ -7,7 +7,7 @@ venue: Under review at ICLR 2026
 # Ensure no placeholder text appears on the homepage
 excerpt: ""
 image: /images/vista.png
-# arxiv: https://arxiv.org/pdf/2506.08123?
+arxiv: https://arxiv.org/pdf/2512.22183v1
 # code: https://github.com/your/repo3
 # website: https://your-site3.example
 ---
