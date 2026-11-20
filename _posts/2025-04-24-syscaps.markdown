@@ -1,0 +1,10 @@
+---
+date: 2025-04-24
+categories: [research]
+title: "SysCaps: Language Interfaces for Simulation Surrogates of Complex Systems"
+authors: "Patrick Emami, Zhaonan Li*, Saumya Sinha*, Truc Nguyen*"
+venue: "ICLR 2025"
+image: "/images/syscaps.png"
+arxiv: "https://arxiv.org/abs/2405.19653"
+code: "https://github.com/NatLabRockies/SysCaps"
+---

@@ -118,18 +118,52 @@ span.highlight {
   box-shadow: 0 0 0 1px rgba(0,0,0,0.04);
 }
 
-.pin-badge {
-  display: inline-block;
-  margin-left: 8px;
-  padding: 1px 6px;
-  font-size: 11px;
-  font-weight: 700;
-  color: #0b5c0b;
-  background: #e6f4ea;
-  border: 1px solid #c4e6cd;
-  border-radius: 6px;
-  vertical-align: text-top;
+/* Page layout (replaces the inline table styles of the original template) */
+table.page {
+  width: 100%;
+  max-width: 800px;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
 }
+table.section {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+td.photo-cell { padding: 2.5%; width: 40%; max-width: 40%; }
+td.bio-cell { padding: 2.5%; width: 60%; vertical-align: middle; }
+td.heading-cell { padding: 2.5% 2.5% 1% 2.5%; width: 100%; vertical-align: middle; }
+td.news-cell { padding: 4px 2.5%; vertical-align: middle; }
+td.pub-img-cell { padding: 2.5%; width: 25%; vertical-align: middle; min-width: 120px; }
+td.pub-text-cell { padding: 2.5%; width: 75%; vertical-align: middle; }
+
+.pub-legend {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #6f7a87;
+}
+.pub-note {
+  margin: 4px 0 0 0;
+}
+
+/* Red badge for orals, awards and similar highlights */
+.highlight-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0px 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #b22222;
+  border: 1px solid #b22222;
+  border-radius: 6px;
+}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
@@ -151,4 +185,10 @@ span.highlight {
   margin: 0 auto;
   height: auto;
   width: 100%;
+}
+
+/* Stack photo above bio on phones */
+@media screen and (max-width: 600px) {
+  td.photo-cell, td.bio-cell { display: block; width: auto; max-width: none; }
+  .image-cropper { width: 60%; margin: 0 auto; }
 }

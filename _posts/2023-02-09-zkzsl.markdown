@@ -1,0 +1,10 @@
+---
+date: 2023-02-09
+categories: [research]
+title: "Zero-Knowledge Zero-Shot Learning for Novel Visual Category Discovery"
+authors: "Zhaonan Li, Hongfu Liu"
+venue: "arXiv preprint"
+status: "review"
+image: "/images/zkzsl.jpg"
+arxiv: "https://arxiv.org/abs/2302.04427"
+---

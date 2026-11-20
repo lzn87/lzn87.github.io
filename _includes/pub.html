@@ -1,0 +1,22 @@
+{% assign post = include.post %}
+<tr>
+  <td class="pub-img-cell">
+    <img src="{{ post.image | default: '/images/placeholder.svg' }}" alt="{{ post.title }}" class="pub-thumb" loading="lazy" />
+  </td>
+  <td class="pub-text-cell">
+    <h3>{{ post.title }}</h3>
+    <br>
+    {% assign bold_name = '<strong>' | append: site.name | append: '</strong>' %}
+    {{ post.authors | replace: site.name, bold_name }}
+    <br>
+    <em>{{ post.venue }}</em>{% if post.highlight %} <span class="highlight-badge">{{ post.highlight }}</span>{% endif %}
+    <br>
+    {% assign sep = "" %}
+    {% if post.arxiv %}{{ sep }}<a href="{{ post.arxiv }}">arXiv</a>{% assign sep = " / " %}{% endif %}
+    {% if post.paper %}{{ sep }}<a href="{{ post.paper }}">paper</a>{% assign sep = " / " %}{% endif %}
+    {% if post.code %}{{ sep }}<a href="{{ post.code }}">code</a>{% assign sep = " / " %}{% endif %}
+    {% if post.dataset %}{{ sep }}<a href="{{ post.dataset }}">dataset</a>{% assign sep = " / " %}{% endif %}
+    {% if post.website %}{{ sep }}<a href="{{ post.website }}">website</a>{% assign sep = " / " %}{% endif %}
+    {% if post.note %}<p class="pub-note">{{ post.note }}</p>{% endif %}
+  </td>
+</tr>

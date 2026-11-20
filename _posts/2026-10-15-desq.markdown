@@ -1,0 +1,9 @@
+---
+date: 2026-10-15
+categories: [research]
+title: "Self-Improving Vision-Language Models through Decoupled Self-Questioning"
+authors: "Zhaonan Li, Ben Zhou"
+venue: "Under review at NAACL 2027"
+status: "review"
+image: "/images/desq.jpg"
+---

@@ -1,0 +1,10 @@
+---
+date: 2025-11-05
+categories: [research]
+title: "QA-LIGN: Aligning LLMs through Constitutionally Decomposed QA"
+authors: "Jacob Dineen, Aswin RRV, Qin Liu, Zhikun Xu, Xiao Ye, Ming Shen, Zhaonan Li, Shijie Lu, Chitta Baral, Muhao Chen, Ben Zhou"
+venue: "Findings of EMNLP 2025"
+image: "/images/qalign.png"
+paper: "https://aclanthology.org/2025.findings-emnlp.1123/"
+arxiv: "https://arxiv.org/abs/2506.08123"
+---

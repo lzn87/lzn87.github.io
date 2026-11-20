@@ -1,14 +1,16 @@
-# updated website
+# lzn87.github.io
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+Personal website of Zhaonan Li, served by GitHub Pages (Jekyll) at https://lzn87.github.io/.
+The layout is adapted from [Jon Barron's website](https://jonbarron.info/) via a Jekyll Now fork.
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+## Updating
 
-
-
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
+- **Publication**: add `_posts/YYYY-MM-DD-<slug>.markdown` with `categories: [research]` and the
+  front matter fields `title`, `authors`, `venue`, and optionally `highlight` (red badge, e.g. `Oral`),
+  `status: review` (lists it under "Under Review & Preprints"), `image`, `paper`, `arxiv`, `code`,
+  `dataset`, `note`. Entries are sorted by the file date, newest first. Do not use a future date:
+  Jekyll skips future posts.
+- **News**: add `_posts/YYYY-MM-DD-news-<slug>.markdown` with `layout: post`, `categories: news` and
+  one line of Markdown as the body. The page shows the newest 8.
+- **Images**: put thumbnails in `images/` at about 640 px wide (JPEG) to keep the page light.
+- Pushing to `master` publishes the site.
